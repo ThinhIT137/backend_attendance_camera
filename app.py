@@ -1,3 +1,7 @@
+from config.logger_utils import setup_global_system_logger
+logger = setup_global_system_logger(log_file_prefix="master-node")
+logger.info("🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!")
+
 import os
 from flask import Flask, render_template
 from flask_cors import CORS

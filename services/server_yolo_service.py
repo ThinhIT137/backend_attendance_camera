@@ -111,7 +111,8 @@ def auto_rebalance_cameras():
                         sv["is_changed"] = True
                         assigned = True
                         break
-                    elif not sv["has_gpu"] and sv["cpu"] <= 80.0:
+                    # 🔥 BỎ chữ "not sv['has_gpu']" đi. Dù có GPU mà hết VRAM thì vẫn cho bú ké CPU!
+                    elif sv["cpu"] <= 80.0:
                         sv["cpu"] += 20.0
                         sv["newly_assigned"].append(cam_id)
                         sv["is_changed"] = True
@@ -420,7 +421,7 @@ def sync_cameras_to_workers():
                     print(f"🎯 [MASTER] Đang gửi {len(cams)} Camera xuống Server {sv_id} ({sv_ip})")
                     
                     # Gọi trúng cái API /api/sync_cameras sếp vừa viết bên Worker đó!
-                    res = requests.post(f"http://{sv_ip}/api/sync_cameras", json={"cameras": cams}, timeout=3)
+                    res = requests.post(f"http://{sv_ip}/api/sync_cameras", json={"cameras": cams}, timeout=45)
                     
                     if res.status_code == 200:
                         print(f"✅ [MASTER] Giao việc thành công cho {sv_id}!")
@@ -448,7 +449,7 @@ def _sync_single_worker(server_id, sv_ip):
             payload = {"cameras": [{"id": c[0], "url": c[1]} for c in cams]}
             
             print(f"🎯 [MASTER] Đang Sync cục bộ {len(cams)} Cam cho Server {server_id}...")
-            res = requests.post(f"http://{sv_ip}/api/sync_cameras", json=payload, timeout=5)
+            res = requests.post(f"http://{sv_ip}/api/sync_cameras", json=payload, timeout=45)
             
             if res.status_code == 200:
                 print(f"✅ [MASTER] Server {server_id} đã Sync cục bộ thành công!")

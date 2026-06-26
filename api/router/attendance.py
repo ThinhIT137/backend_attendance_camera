@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import os
 from flask import Blueprint, request, jsonify
 from db.repository import Repository
@@ -14,7 +18,9 @@ def api_get_users():
     target_name = request.args.get("name", "").strip()
     try:
         page, limit = int(request.args.get("page", 1)), int(request.args.get("limit", 10))
+        logger.debug(f"page: {page} + limit: {limit}")
     except ValueError:
+        logger.error(f"page: 1 + limit: 10")
         page, limit = 1, 10
     
     rows, total = Repository.search_attendance(name=target_name, limit=limit, offset=(page-1)*limit)
@@ -28,14 +34,13 @@ def api_get_users():
     # Filter by name if provided (simple filter for now, could be in repo)
     if target_name:
         users = [u for u in users if target_name.lower() in u[0].lower()]
-    
+        logger.debug(f"{users}")
     total_rows = len(users)
     start = (page - 1) * limit
     end = start + limit
     paged_users = users[start:end]
-
     records = [{"id": i+start, "name": u[0], "embeddings": u[1], "last_registered": u[2]} for i, u in enumerate(paged_users)]
-
+    logger.debug(f"{records}")
     return jsonify({
         "records": records, 
         "pagination": {

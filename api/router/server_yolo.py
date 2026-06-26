@@ -1,3 +1,7 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
+
 import requests
 from flask import Blueprint, request, jsonify
 from datetime import datetime
@@ -17,7 +21,7 @@ server_yolo_bp = Blueprint('server_yolo', __name__)
 @server_yolo_bp.route('/api/heartbeat', methods=['POST'])
 def receive_heartbeat():
     data = request.json
-    print(f"{data}")
+    logger.debug(f"{data}")
     if not data or 'server_id' not in data:
         return jsonify({"error": "Thiếu dữ liệu server_id"}), 400
     try:
@@ -25,7 +29,7 @@ def receive_heartbeat():
         update_server_status(data)
         return jsonify({"status": "success", "message": "Master đã ghi nhận!"}), 200
     except Exception as e:
-        print(f"❌ [MASTER] Lỗi khi nhận nhịp tim: {e}")
+        logger.error(f"❌ [MASTER] Lỗi khi nhận nhịp tim: {e}")
         return jsonify({"error": str(e)}), 500
 
 # =======================================================
@@ -38,19 +42,22 @@ def report_dead():
     sv_ip = data.get('ip_address')
     
     if not sv_id or not sv_ip:
+        logger.error("Thiếu thông tin Server!")
         return jsonify({"status": "error", "message": "Thiếu thông tin Server!"}), 400
 
     # MASTER XÁC MINH CHÉO
     try:
         # Chỉnh timeout nhỏ thôi để không bị treo Master
-        res = requests.get(f"http://{sv_ip}:8000/api/ping", timeout=2)
+        res = requests.get(f"http://{sv_ip}/api/ping", timeout=2)
         if res.status_code == 200:
+            logger.debug("Nó vẫn sống mà, do mạng của mày đó Frontend!")
             return jsonify({"status": "alive", "message": "Nó vẫn sống mà, do mạng của mày đó Frontend!"})
     except requests.exceptions.RequestException:
         # 1. Thằng này hẹo thật rồi -> Gọi hàm Service để tắt nó trong DB
         update_server_status(sv_id, 'offline')
         # 2. Gọi hàm Service để nhét nó vào danh sách "Chờ hồi sinh"
         mark_server_dead(sv_id, sv_ip)
+        logger.error("Xác nhận đã hẹo, tao đã gạch tên nó!")
         return jsonify({"status": "dead", "message": "Xác nhận đã hẹo, tao đã gạch tên nó!"})
 
 # =======================================================
@@ -60,8 +67,10 @@ def report_dead():
 def fetch_servers():
     try:
         servers = get_ip_server()
+        logger.debug(f"{servers}")
         return jsonify(servers)
     except Exception as e:
+        logger.error(f"error")
         return jsonify({"error": str(e)}), 500
     
 # =======================================================
@@ -73,28 +82,34 @@ def create_server():
     # Chỉ cần nhận IP thôi
     ip_address = data.get('ip_address') or data.get('ip')
     if not ip_address:
+        logger.error("Vui lòng cung cấp ip_address!")
         return jsonify({"error": "Vui lòng cung cấp ip_address!"}), 400
     try:
         # Gọi hàm tạo, hàm này sẽ trả về ID tự sinh (VD: SV_003)
         new_id = add_new_server(ip_address)
+        logger.debug(f"{new_id}")
         return jsonify({
             "status": "success", 
             "message": f"Tạo Server tự động thành công với mã: {new_id}!",
             "server_id": new_id
         }), 201
     except ValueError as ve:
+        logger.error(f"{str(ve)}")
         return jsonify({"status": "error", "message": str(ve)}), 400
     except Exception as e:
+        logger.error(f"{str(e)}")
         return jsonify({"status": "error", "message": f"Lỗi DB: {str(e)}"}), 500
 # =======================================================
 # [PUT] Cập nhật Server
 # =======================================================
 @server_yolo_bp.route('/api/servers/<string:server_id>', methods=['PUT'])
 def update_server(server_id):
+    logger.info("")
     data = request.json
     # Lấy IP an toàn
     ip_address = data.get('ip_address') or data.get('ip')
     if not ip_address:
+        logger.error("Vui lòng cung cấp IP mới!")
         return jsonify({"status": "error", "message": "Vui lòng cung cấp IP mới!"}), 400
     try:
         # Chỉ gọi hàm update IP, giữ nguyên ID gốc (server_id) từ URL

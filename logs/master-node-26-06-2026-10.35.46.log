@@ -1,0 +1,139 @@
+2026-06-26 10:35:46 | INFO     | app:3 | 🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-26 10:35:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:35:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:35:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:35:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:35:51 | INFO     | _internal:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.40.91.11:5000
+2026-06-26 10:35:51 | INFO     | _internal:97 | [33mPress CTRL+C to quit[0m
+2026-06-26 10:35:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:36:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:37:59 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:05 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:19 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:23 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:23] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 22.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:29 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:29] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:30 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:38:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 43.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:35 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:35] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:41 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:41] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 20.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:47 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:47] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:38:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 22.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:53 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:53] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:38:53 | DEBUG    | connectionpool:544 | http://10.40.91.11:8000 "POST /api/sync_cameras HTTP/1.1" 200 203
+2026-06-26 10:38:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 30.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:38:59 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:38:59] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:39:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 20.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:05 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:05] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 26.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:11 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:11] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 29.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:17 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:17] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 19.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:23 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:23] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 30.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:29 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:29] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 28.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:35 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:35] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 42.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:41 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:41] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 40.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:47 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:47] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:48 | DEBUG    | connectionpool:544 | http://10.40.91.11:8000 "POST /api/sync_cameras HTTP/1.1" 200 313
+2026-06-26 10:39:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:39:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 27.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:53 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:53] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:39:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:39:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:39:59 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:39:59] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 45.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:05 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:05] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 34.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:11 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:11] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 26.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:17 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:17] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:20 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 29.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:23 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:23] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 41.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:29 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:29] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 31.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:35 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:35] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 53.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:41 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:41] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 44.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:47 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:47] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 25.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:53 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:53] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:40:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:40:57 | DEBUG    | connectionpool:544 | http://10.40.91.11:8000 "POST /api/sync_cameras HTTP/1.1" 200 423
+2026-06-26 10:40:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 53.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:40:59 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:40:59] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 50.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:05 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:05] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-06-26 10:41:09 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 50.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:11 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:11] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 41.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:18 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:18] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 34.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:24 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:24] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 42.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:30 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:30] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-26 10:41:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 29.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.23}
+2026-06-26 10:41:36 | INFO     | _internal:97 | 10.40.91.11 - - [26/Jun/2026 10:41:36] "POST /api/heartbeat HTTP/1.1" 200 -
+2026-06-26 10:41:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
