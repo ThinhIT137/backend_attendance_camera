@@ -16,7 +16,7 @@ reg_sessions = {}
 recog_state = {
     "tracking_name":     None,
     "consecutive_matches": 0,
-    "required_matches":  3,
+    "required_matches":  2,
     "recently_logged":   {},
     "log_cooldown":      10.0,
 }

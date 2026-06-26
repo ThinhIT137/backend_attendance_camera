@@ -14,6 +14,7 @@ else:
 FACES_DIR     = os.path.join(DATA_DIR, "registered_faces")
 FACES_DB      = os.path.join(DATA_DIR, "databases", "faces.db")
 ATTENDANCE_DB = os.path.join(DATA_DIR, "databases", "attendance.db")
+CAMERA_DB     = os.path.join(DATA_DIR, "databases",  "camera.db")
 
 HOST_TOKEN = os.environ.get("HOST_TOKEN", "host_token_123")
 GATEWAY_URL = os.environ.get("GATEWAY_URL", "http://10.40.91.141:5100")
