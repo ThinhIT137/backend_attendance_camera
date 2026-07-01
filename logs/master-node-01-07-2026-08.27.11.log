@@ -1,0 +1,213 @@
+2026-07-01 08:27:11 | INFO     | app:3 | 🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 08:27:12 | INFO     | app:78 | ==================================================
+2026-07-01 08:27:12 | INFO     | app:79 |  🌟 Face Recognition Attendance System (Flask + FastAPI)
+2026-07-01 08:27:12 | INFO     | app:80 | ==================================================
+2026-07-01 08:27:12 | INFO     | app:70 | 🚀 Đang khởi động hệ thống...
+2026-07-01 08:27:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:27:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:27:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:27:12 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 51 camera không có ai nhận.
+2026-07-01 08:27:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:27:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.90.11:8000
+2026-07-01 08:27:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:27:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:27:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-07-01 08:27:17 | DEBUG    | connectionpool:544 | http://10.40.91.11:8000 "POST /api/update_master_url HTTP/1.1" 200 100
+2026-07-01 08:27:17 | INFO     | app:101 |  🚀 Đang chạy Server tại: http://localhost:5000
+2026-07-01 08:27:17 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-01 08:27:17 | INFO     | websocket_service:48 | 🛸 [MASTER] Trạm thu thập AI đã mở tại cổng 5558, chờ Worker ném data tới...
+2026-07-01 08:27:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:27:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:27:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:27:22 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 51 camera không có ai nhận.
+2026-07-01 08:27:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:27:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 10.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 10.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:27:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:27:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:27:32 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:27:32 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_004).
+2026-07-01 08:27:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.11:8000
+2026-07-01 08:27:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 9.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 9.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:36 | DEBUG    | connectionpool:544 | http://10.40.91.11:8000 "POST /api/sync_cameras HTTP/1.1" 200 112
+2026-07-01 08:27:36 | INFO     | camRepository:159 | Đã chuyển 2 camera về trạng thái online.
+2026-07-01 08:27:36 | INFO     | serverAIRepository:84 | ✅ Đã update 1 server sang trạng thái online.
+2026-07-01 08:27:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:27:39 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 12.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:39 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 12.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-07-01 08:27:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 22.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.78, 'max_cam': 2}
+2026-07-01 08:27:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 22.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.78, 'max_cam': 2}
+2026-07-01 08:27:46 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:27:46 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:27:46 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:27:46 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:27:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:27:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.66, 'max_cam': 2}
+2026-07-01 08:27:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.66, 'max_cam': 2}
+2026-07-01 08:27:56 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:27:56 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:27:56 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:27:56 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:27:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.65, 'max_cam': 2}
+2026-07-01 08:27:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.65, 'max_cam': 2}
+2026-07-01 08:28:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 20.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 20.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:06 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:06 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:06 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:06 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:09 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 24.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:09 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 24.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 19.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 19.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:16 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:16 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:16 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:16 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 22.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 22.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:26 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:26 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:26 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:26 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:28 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 21.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:28 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 21.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:34 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 21.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:34 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 21.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:36 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:36 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:36 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:36 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:40 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 20.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:40 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 20.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:46 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:46 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:46 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:46 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:46 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 25.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:46 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 25.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:52 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:52 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:28:56 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:28:56 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:28:56 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:28:56 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:28:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 18.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:28:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 18.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 30.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 30.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:06 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:06 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:06 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:06 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 26.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 26.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:16 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:16 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:16 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:16 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 47.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 47.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 28.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 28.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:26 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:26 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:26 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:26 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 33.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 33.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 17.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 17.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:36 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:36 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:36 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:36 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 23.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 23.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:46 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:46 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:46 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:46 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 23.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 23.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:29:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 21.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 21.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:56 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:29:56 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:29:56 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:29:56 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:29:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 29.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:29:59 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 29.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:04 | DEBUG    | server_yolo:90 | SV_005
+2026-07-01 08:30:04 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_004', 'ip': '10.40.91.11:8000', 'status': 'online', 'activeCam': 2}, {'id': 'SV_005', 'ip': '10.40.90.217:8000', 'status': 'pending', 'activeCam': 0}]
+2026-07-01 08:30:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 40.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 40.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:06 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:06 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:06 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:06 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:30:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 19.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 19.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:16 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:16 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:16 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:16 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 23.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 23.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:30:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 15.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 15.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:26 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:26 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:26 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:26 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 15.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 15.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:30:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 15.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 15.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:36 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:36 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:36 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:36 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 15.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 15.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:30:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:30:46 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:46 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:46 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:46 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:48 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 14.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:48 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 14.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:54 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 12.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:54 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 12.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:30:56 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:30:56 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:30:56 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:30:56 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:30:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:31:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_004', 'cpu_usage': 18.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:31:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_004', 'cpu_usage': 18.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.46, 'max_cam': 2}
+2026-07-01 08:31:01 | DEBUG    | server_yolo:24 | {'server_id': 'SV_001', 'cpu_usage': 4.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 11.83, 'max_cam': 13}
+2026-07-01 08:31:01 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_001', 'cpu_usage': 4.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 11.83, 'max_cam': 13}
+2026-07-01 08:31:06 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:31:06 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:31:06 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:31:06 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-07-01 08:31:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100

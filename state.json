@@ -1,0 +1,9 @@
+{
+    "offline": "offline",
+    "running": "running",
+    "online": "online",
+    "ready": "ready",
+    "busy": "busy",
+    "fail": "fail",
+    "pending": "pending"
+}

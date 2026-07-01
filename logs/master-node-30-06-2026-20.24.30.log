@@ -1,0 +1,954 @@
+2026-06-30 20:24:30 | INFO     | app:3 | 🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-06-30 20:24:31 | INFO     | app:78 | ==================================================
+2026-06-30 20:24:31 | INFO     | app:79 |  🌟 Face Recognition Attendance System (Flask + FastAPI)
+2026-06-30 20:24:31 | INFO     | app:80 | ==================================================
+2026-06-30 20:24:31 | INFO     | app:70 | 🚀 Đang khởi động hệ thống...
+2026-06-30 20:24:31 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:24:31 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:24:31 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:24:31 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 51 camera không có ai nhận.
+2026-06-30 20:24:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:24:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.90.11:8000
+2026-06-30 20:24:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:24:34 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:24:35 | DEBUG    | connectionpool:544 | http://192.168.1.11:8000 "POST /api/update_master_url HTTP/1.1" 200 101
+2026-06-30 20:24:35 | INFO     | app:101 |  🚀 Đang chạy Server tại: http://localhost:5000
+2026-06-30 20:24:35 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-06-30 20:24:35 | INFO     | websocket_service:48 | 🛸 [MASTER] Trạm thu thập AI đã mở tại cổng 5558, chờ Worker ném data tới...
+2026-06-30 20:24:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:41 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:24:41 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:24:41 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:24:41 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:24:41 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:24:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:24:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:24:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:24:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:24:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:12 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:12 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:25 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 25.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:25 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 25.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 17.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 17.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:41 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:25:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:51 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:25:51 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:25:51 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:25:51 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:25:51 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:25:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:25:52 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:52 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:25:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:25:59 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:26:12 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:12 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:19 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:19 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:26:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:26:39 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:39 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:46 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:46 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:26:51 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:26:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:26:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:26:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:01 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:27:01 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:27:01 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:27:01 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:27:01 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:27:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:27:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:27:06 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:06 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:27:13 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:13 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:27:33 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:33 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:27:40 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:40 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:27:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:27:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:01 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:28:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:07 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:07 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:11 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:28:11 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:28:11 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:28:11 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:28:11 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:28:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:28:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:27 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:27 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:34 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:34 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:28:54 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:28:54 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:01 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:01 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:29:08 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 17.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:08 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 17.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:11 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:29:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:29:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 23.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 23.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:29:21 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:21 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:21 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:29:21 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:29:21 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:29:21 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:29:21 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:29:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:29:28 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 34.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:28 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 34.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:29:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 30.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 30.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 31.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 31.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:29:48 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 28.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:48 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 28.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:55 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 45.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:55 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 45.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:29:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:02 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 32.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:02 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 32.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:09 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 36.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:09 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 36.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:15 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 39.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:15 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 39.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:21 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:30:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 55.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 55.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 49.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 49.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:30:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:30:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:30:32 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:30:32 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:30:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:30:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 41.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:36 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 41.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 31.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 31.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:30:49 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 28.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:49 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 28.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:56 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 42.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:56 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 42.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:30:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 34.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 34.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:09 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 31.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:09 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 31.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 34.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 34.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 40.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 40.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 26.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 26.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:32 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:31:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 31.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:36 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 31.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:31:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:31:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:31:42 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:31:42 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:31:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:31:43 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 30.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:43 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 30.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:31:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 19.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 19.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:56 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 33.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:31:56 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 33.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 23.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 23.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 21.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 24.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 24.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 29.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:30 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 29.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 15.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 15.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:42 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:32:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:43 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:43 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:32:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:32:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:32:52 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:32:52 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:32:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:32:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:32:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 15.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:32:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 15.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 23.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 23.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 19.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 19.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 17.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 17.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:30 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:44 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 19.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:44 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 19.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 21.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 21.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:52 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:33:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:33:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 24.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:33:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 24.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:34:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:34:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:34:02 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:34:02 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:34:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:34:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 29.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 29.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:34:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 19.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 19.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:34:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:31 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 20.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:31 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 20.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:34:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:34:44 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 24.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:44 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 24.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 24.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 24.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:34:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 25.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:34:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 25.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:02 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:35:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 24.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 24.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:35:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:35:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:35:12 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:35:12 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:35:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:35:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 28.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 28.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:31 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 21.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:31 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 21.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:44 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:44 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 25.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:35:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 20.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:35:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 20.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:36:12 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:36:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:36:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:36:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:36:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:36:22 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:36:22 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:36:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:36:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:36:25 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 17.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:25 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 17.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:31 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:31 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:36:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:36:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:36:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:12 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:12 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:22 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:37:25 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:25 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:37:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:37:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:37:32 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:37:32 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:37:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:37:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:39 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:39 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:52 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:52 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:37:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:37:59 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:06 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:06 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:12 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:12 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:19 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:19 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:27 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:32 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:38:33 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:33 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:39 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:39 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:38:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:38:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:38:42 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:38:42 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:38:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:38:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:46 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:46 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:38:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:38:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:06 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:06 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:39:13 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:13 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:39:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:27 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:27 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:39:33 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:33 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:40 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:40 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:39:42 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:39:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:39:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:39:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:39:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:39:52 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:39:52 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:39:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:39:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:39:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:07 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:07 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 22.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:27 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:27 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:34 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:34 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:40:52 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:40:54 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 15.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:54 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 15.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:40:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:41:01 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:01 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:41:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:41:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:41:02 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:41:02 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:41:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:41:07 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:07 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:41:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:21 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 26.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:21 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 26.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:41:28 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:28 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:34 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:34 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:37 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:41:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:41:48 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:48 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:55 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:41:55 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:01 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:01 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:02 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:42:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:08 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:08 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:42:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:42:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:42:12 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:42:12 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:42:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:42:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:15 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:15 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:28 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:28 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 40.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 40.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 26.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 26.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:49 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:49 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:42:55 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:42:55 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:02 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:02 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:09 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:09 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:12 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:43:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:43:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:43:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:43:22 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:43:22 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:43:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:43:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:36 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:49 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 33.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:49 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 33.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:43:56 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:43:56 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 52.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 52.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:44:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:44:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:44:22 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:44:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:30 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:44:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:44:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:44:32 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:44:32 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:44:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:44:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:44:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:36 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:44:43 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:43 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:44:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 18.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:30 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 18.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:32 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:45:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:45:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:45:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:45:42 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:45:42 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:45:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:45:44 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:44 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:45:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:45:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 27.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 27.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:31 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:31 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:42 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:46:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:46:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:46:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:46:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:46:52 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:46:52 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:46:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:46:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:46:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:18 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:18 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:25 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:25 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:38 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:38 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:45 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:45 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:52 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:52 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:52 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:47:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:47:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:47:59 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:48:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:48:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:48:02 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:48:02 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:48:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:48:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:48:05 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:05 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:12 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:12 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:48:19 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:19 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:48:32 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:32 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:39 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:39 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:48:46 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:46 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:48:59 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:48:59 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:49:02 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:49:06 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:06 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:49:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:49:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:49:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:49:12 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:49:12 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:49:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:49:13 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:13 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:49:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:26 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:26 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:49:33 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:33 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:40 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:40 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:49:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:53 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:53 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:49:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:00 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 15.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:00 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 15.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:07 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:07 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:12 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:50:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:20 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:20 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:50:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:50:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:50:22 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:50:22 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:50:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:50:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:27 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:27 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:34 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:34 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:47 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:47 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:50:54 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:54 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:50:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:01 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:01 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:08 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:08 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:14 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:14 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:21 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:21 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:22 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:51:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:28 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:28 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:51:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:51:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:51:32 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:51:32 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:51:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:51:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:41 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:41 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:48 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:48 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:51:55 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:51:55 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:02 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:02 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:08 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:08 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:13 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:15 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:15 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:22 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:22 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:32 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:52:35 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:35 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:38 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:42 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:42 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:52:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:52:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:52:42 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:52:42 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:52:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:52:49 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:49 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:52:56 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:52:56 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:02 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 10.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:02 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 10.6, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:09 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:09 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:16 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:16 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:29 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:29 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:36 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:36 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:42 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:53:43 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:43 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:53:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:53:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:53:52 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:53:52 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:53:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:53:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:53:56 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:53:56 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:03 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 4.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:03 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 4.4, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:54:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 3.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:54:23 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:23 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 9.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:30 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:30 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:54:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 8.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:54:43 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 1.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:43 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 1.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:50 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:50 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 5.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:52 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:54:52 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:54:57 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:57 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 2.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:54:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:55:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:55:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:55:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:55:02 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:55:02 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:55:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-06-30 20:55:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.9, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:55:10 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:10 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 6.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:17 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 7.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:17 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 7.8, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:55:24 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 12.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:24 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 12.7, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:31 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:31 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.0, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:55:37 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:37 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:44 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 11.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:44 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 11.1, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:48 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:55:51 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 16.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:51 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 16.3, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:58 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 28.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:58 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 28.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:55:58 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:56:02 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-06-30 20:56:02 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ReadTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Read timed out. (read timeout=60). Tiến hành Rollback!
+2026-06-30 20:56:04 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 13.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:56:04 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 13.5, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:56:11 | DEBUG    | server_yolo:24 | {'server_id': 'SV_003', 'cpu_usage': 14.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:56:11 | DEBUG    | server_yolo_service:29 | {'server_id': 'SV_003', 'cpu_usage': 14.2, 'has_gpu': True, 'gpu_usage': 0, 'vram_free_gb': 3.87, 'max_cam': 2}
+2026-06-30 20:56:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-06-30 20:56:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-06-30 20:56:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-06-30 20:56:12 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 49 camera không có ai nhận.
+2026-06-30 20:56:12 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-06-30 20:56:12 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000

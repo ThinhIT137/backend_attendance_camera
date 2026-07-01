@@ -11,11 +11,23 @@ camera_bp = Blueprint('camera', __name__)
 @camera_bp.route('/api/cameras', methods=['GET'])
 def get_all_cameras():
     try:
+        # Lấy IP của server hiện tại đang chạy Flask (cắt bỏ phần port 5000)
+        host_ip = request.host.split(':')[0]
         with sqlite3.connect(CAMERA_DB) as conn:
             cursor = conn.cursor()
+            # Sếp lưu ý: Nếu trong DB có sẵn cột ws_port thì sếp thêm vào SELECT nhé.
+            # Ví dụ: SELECT cam_id, name, rtsp_url, server_id, status, ws_port FROM cameras
             cursor.execute("SELECT cam_id, name, rtsp_url, server_id, status FROM cameras")
             rows = cursor.fetchall()
-            cameras = [{"cam_id": r[0], "name": r[1], "rtsp_url": r[2], "server_id": r[3], "status": r[4]} for r in rows]
+            cameras = []
+            for r in rows:
+                cam_id = r[0] # Lấy cam_id ra để tái sử dụng cho url
+                cameras.append({
+                    "id": cam_id,                                # Đổi key 'cam_id' thành 'id' chuẩn Frontend
+                    "name": r[1],
+                    "url": f"http://{host_ip}:8889/{cam_id}/",   # Tự động build WebRTC URL
+                    "ws_port": 8000                              # ⚠️ Nhớ thay 8000 bằng logic lấy ws_port của sếp!
+                })
         return jsonify(cameras)
     except Exception as e:
         return jsonify({"error": str(e)}), 500

@@ -1,43 +1,62 @@
+import logging
+# Tạo logger cục bộ cho file này (nó sẽ tự thừa kế cấu hình Root ở app.py / main.py)
+logger = logging.getLogger(__name__)
 import threading
 import os
 import time
+from collections import deque
 from datetime import datetime
 import sqlite3
 import requests
+import json
 from dotenv import load_dotenv, set_key
 
 from config.settings import CAMERA_DB
+from db.camRepository import CamRepository
+from db.serverAIRepository import ServerAIRepository
 
 load_dotenv()
 DEAD_SERVERS = {} 
 MASTER_ENV_PATH = os.path.join(os.path.dirname(__file__), "..", ".env")
-
+STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "state.json")
+with open(STATE_PATH, encoding="utf-8") as f:
+    state = json.load(f)
 # =======================================================
 # 1. QUẢN LÝ TRẠNG THÁI SERVER
 # =======================================================
 def update_server_status(data):
     """Ghi nhận nhịp tim và toàn bộ thông số phần cứng từ Worker gửi lên"""
+    logger.debug(f"{data}")
     server_id = data.get('server_id')
     
     # Lấy dữ liệu phần cứng (có fallback mặc định nếu Worker gửi thiếu)
     cpu_usage = data.get('cpu_usage', 0.0)
     has_gpu = 1 if data.get('has_gpu') else 0  # SQLite chuộng 1/0 thay vì True/False
     vram_free_gb = data.get('vram_free_gb', 0.0)
+    max_cam = data.get('max_cam', 0.0)
     
     last_heartbeat = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     with sqlite3.connect(CAMERA_DB) as conn:
         cursor = conn.cursor()
+
+        cursor.execute("SELECT COUNT(*) FROM cameras WHERE server_id = ?", (server_id,))
+        real_active_cam = cursor.fetchone()[0]
         # UPDATE toàn tập: Từ trạng thái, thời gian cho đến thông số CPU/GPU
         cursor.execute("""
             UPDATE ai_servers 
-            SET status = 'online', 
+            SET status = CASE 
+                            WHEN ? < ? THEN 'pending' 
+                            ELSE 'online' 
+                         END, 
+                active_cam = ?,
                 last_heartbeat = ?,
                 cpu_usage = ?,
                 has_gpu = ?,
-                vram_free_gb = ?
+                vram_free_gb = ?,
+                max_cam = ?
             WHERE server_id = ?
-        """, (last_heartbeat, cpu_usage, has_gpu, vram_free_gb, server_id))
+        """, (real_active_cam, max_cam, real_active_cam, last_heartbeat, cpu_usage, has_gpu, vram_free_gb, max_cam, server_id))
         
         # Báo log ra Terminal nếu có một thằng Worker lạ hoắc không có trong DB mà cứ gửi nhịp tim
         if cursor.rowcount == 0:
@@ -63,112 +82,173 @@ def check_dead_servers():
                 pass 
         time.sleep(5)
 
+def detect_dead_servers():
+    """Tử thần đi tuần: Quét các server đang online, nếu mất tim sẽ ném vào Sổ Tử"""
+    print("💀 [TỬ THẦN] Đã bắt đầu đi tuần tra nhịp tim Server...")
+    while True:
+        try:
+            with sqlite3.connect(CAMERA_DB) as conn:
+                cursor = conn.cursor()
+                # Chỉ soi mấy thằng đang mang tiếng là còn sống (online hoặc pending)
+                cursor.execute("""
+                    SELECT server_id, ip_address, last_heartbeat 
+                    FROM ai_servers 
+                    WHERE status IN ('online', 'pending')
+                """)
+                servers = cursor.fetchall()
+                current_time = datetime.now()
+                for sv_id, sv_ip, last_hb_str in servers:
+                    if not last_hb_str:
+                        continue
+                    # Chuyển giờ trong DB thành đối tượng datetime để tính toán
+                    # (Lưu ý: Format này phải khớp với format lúc sếp lưu ở hàm receive_heartbeat nhé)
+                    last_hb = datetime.strptime(last_hb_str, "%Y-%m-%d %H:%M:%S")
+                    diff_seconds = (current_time - last_hb).total_seconds()
+                    # Nếu tim ngừng đập quá 15 giây
+                    if diff_seconds > 15:
+                        print(f"💀 [BÁO TỬ] Server {sv_id} đã mất tích ({int(diff_seconds)}s không phản hồi)!")
+                        # 1. Update DB thành offline, giải phóng tài nguyên ngay lập tức
+                        cursor.execute("UPDATE ai_servers SET status = 'offline', active_cam = 0 WHERE server_id = ?", (sv_id,))
+                        cursor.execute("UPDATE cameras SET server_id = NULL, status = 'pending' WHERE server_id = ?", (sv_id,))    
+                        conn.commit()
+                        # 2. Ghi tên vào Sổ Tử cho bác sĩ đi chích điện cấp cứu!
+                        mark_server_dead(sv_id, sv_ip)
+        except Exception as e:
+            conn.rollback()
+            print(f"⚠️ Lỗi khi Tử Thần đi tuần: {e}")
+        time.sleep(10) # 10 giây đi lùa 1 lần cho nhẹ máy
+
 def start_server_monitor():
+    threading.Thread(target=detect_dead_servers, daemon=True).start()
     threading.Thread(target=check_dead_servers, daemon=True).start()
     print("🔍 Đã bật luồng tuần tra Server YOLO!")
 
 # =======================================================
 # 2. KHỞI ĐỘNG APP: PHÂN PHÁT TÀI NGUYÊN (CHỈ CHẠY 1 LẦN)
 # =======================================================
+def no_pending_is_fail_cams():
+    fail_Cams = CamRepository.get_cam_fail()
+    if not fail_Cams:
+        return []
+    # có cam fail thì lấy cam fail check tiếp nhỡ nó sống lại
+    CamRepository.set_cam_pending(fail_Cams)
+    return CamRepository.get_cam_pending()
+
 def auto_rebalance_cameras():
-    """Hàm tuần tra: Cấp phát 'sẵn sàng', chờ YOLO confirm rồi mới cho 'running'"""
+    """Hàm tuần tra bằng DEQUE (O(1)): Chia bài tốc độ bàn thờ"""
     try:
-        with sqlite3.connect(CAMERA_DB) as conn:
-            cursor = conn.cursor()
+        # 1. LẤY CAMERA CẦN CHIA
+        pending_cams = list(CamRepository.get_cam_pending())
+        cams_queue = deque(pending_cams)
+        if not pending_cams:
+            pending_cams = list(no_pending_is_fail_cams())
+            
+        if not pending_cams:
+            return  
+            
+        logger.debug(f"[🔄] Phát hiện {len(pending_cams)} Camera bơ vơ. Bắt đầu chia lại bài...")
 
-            # 1. TÌM CAMERA BƠ VƠ (Lột thẻ ID cũ trước khi chia)
-            cursor.execute("""
-                SELECT c.cam_id, c.rtsp_url 
-                FROM cameras c
-                LEFT JOIN ai_servers s ON c.server_id = s.server_id
-                WHERE c.status = 'pending' OR c.server_id IS NULL OR s.status = 'offline'
-            """)
-            pending_cams = cursor.fetchall()
-            print(f"🔄 Phát hiện {len(pending_cams)} Camera bơ vơ. Bắt đầu chia lại bài...")
-            if not pending_cams:
-                return 
-            pending_cam_ids = [cam[0] for cam in pending_cams]
-            placeholders = ",".join(["?"] * len(pending_cam_ids))
-            cursor.execute(f"UPDATE cameras SET server_id = NULL, status = 'pending' WHERE cam_id IN ({placeholders})", pending_cam_ids)
-            conn.commit()
+        # 2. LẤY SERVER & LỌC NHỮNG THẰNG CÒN SLOT
+        pending_servers = ServerAIRepository.get_server_pending()
+        if not pending_servers:
+            logger.info("[❌] Không có server nào đang rảnh để chia...")
+            return
+            
+        server_list = []
+        for s in pending_servers:
+            # 🛠️ FIX BOM SỐ 3: Bóc data từ sqlite3.Row bằng Key chuẩn để không lộn cột
+            try:
+                max_c = s["max_cam"]
+                act_c = s["active_cam"]
+                sv_id = s["server_id"]
+                sv_ip = s["ip_address"]
+            except Exception:
+                # Dự phòng nếu s là Tuple thuần
+                max_c = s[6]
+                act_c = s[5]
+                sv_id = s[0]
+                sv_ip = s[1]
+                
+            cam_size = max_c - act_c
+            if cam_size > 0:
+                server_list.append({
+                    "id": sv_id,
+                    "ip": sv_ip,
+                    "newly_assigned": [],
+                    "cam_size": cam_size,
+                    "is_changed": False
+                })
 
-            # 2. TÌM SERVER ĐANG SỐNG VÀ CHIA BÀI (Thuật toán trừ ảo)
-            cursor.execute("SELECT server_id, ip_address, has_gpu, vram_free_gb, cpu_usage, active_cam FROM ai_servers WHERE status = 'online'")
-            alive_servers = cursor.fetchall()
-            if not alive_servers: return
+        servers_queue = deque(server_list)
+        camera_rollback_fail = []
+        
+        # 3. CHIA BÀI BẰNG HÀNG ĐỢI (O(1))
+        while cams_queue:
+            if not servers_queue:
+                logger.warning(f"[⚠️] Hết chỗ! Dư {len(cams_queue)} camera không có ai nhận.")
+                break
+                
+            sv = servers_queue.popleft()
+            sv["newly_assigned"].append(cams_queue.popleft())
+            sv["is_changed"] = True
+            sv["cam_size"] -= 1  
+            
+            if sv["cam_size"] > 0:
+                servers_queue.append(sv)
 
-            servers = [{"id": s[0], "ip": s[1], "has_gpu": bool(s[2]), "vram": s[3], "cpu": s[4], "active": s[5], "newly_assigned": [], "is_changed": False} for s in alive_servers]
-
-            for cam in pending_cams:
-                cam_id = cam[0]
-                assigned = False
-                servers.sort(key=lambda x: (not x["has_gpu"], -x["vram"], x["cpu"]))
-
-                for sv in servers:
-                    if sv["has_gpu"] and sv["vram"] >= 0.4:
-                        sv["vram"] -= 0.4
-                        sv["newly_assigned"].append(cam_id)
-                        sv["is_changed"] = True
-                        assigned = True
-                        break
-                    # 🔥 BỎ chữ "not sv['has_gpu']" đi. Dù có GPU mà hết VRAM thì vẫn cho bú ké CPU!
-                    elif sv["cpu"] <= 80.0:
-                        sv["cpu"] += 20.0
-                        sv["newly_assigned"].append(cam_id)
-                        sv["is_changed"] = True
-                        assigned = True
-                        break
-
-            # 3. ĐƯA TẤT CẢ CAMERA ĐƯỢC CHIA VÀO TRẠNG THÁI "SẴN SÀNG" (ready)
-            for sv in servers:
-                if sv["is_changed"]:
-                    for c_id in sv["newly_assigned"]:
-                        # Tạm thời đánh dấu là ready, CHƯA running
-                        cursor.execute("UPDATE cameras SET server_id = ?, status = 'ready' WHERE cam_id = ?", (sv["id"], c_id))
-            conn.commit()
-
-            # 4. GỬI XUỐNG YOLO VÀ CHỜ KẾT QUẢ BÁO CÁO (Xác nhận 2 bước)
-            for sv in servers:
-                if sv["is_changed"]:
-                    cursor.execute("SELECT cam_id, rtsp_url FROM cameras WHERE server_id = ?", (sv["id"],))
-                    all_cams = [{"id": row[0], "url": row[1]} for row in cursor.fetchall()]
+        server_ready = [sv for sv in server_list if sv["is_changed"]]
+        
+        # 4. GIAO VIỆC VÀ CHỐT SỔ
+        try:
+            servers_to_online = []
+            for sv in server_ready:
+                CamRepository.set_cam_busy(sv["newly_assigned"], sv["id"])
+                
+            for sv in server_ready:
+                # 🛠️ FIX BOM SỐ 1: Bóc bằng Key get() chứ không dùng index row[0]
+                cam_payload = []
+                for row in sv["newly_assigned"]:
+                    cam_id = row.get("cam_id") or row.get("id")
+                    cam_url = row.get("rtsp_url") or row.get("url")
+                    cam_payload.append({"id": cam_id, "url": cam_url})
+                
+                # 🛠️ FIX BOM SỐ 2: Xử lý vụ URL bị lặp http://
+                base_url = sv['ip']
+                if not base_url.startswith("http"):
+                    base_url = f"http://{base_url}"
                     
-                    try:
-                        # 🔥 Lưu ý: Vẫn phải để timeout cao (VD: 60s) vì Worker còn đang bận sleep(6) ở mỗi lô
-                        res = requests.post(f"http://{sv['ip']}/api/sync_cameras", json={"cameras": all_cams}, timeout=60)
-                        
-                        if res.status_code == 200:
-                            data = res.json()
-                            # Lấy danh sách Worker nuốt được và nhả ra
-                            accepted = data.get("accepted", [])
-                            rejected = data.get("rejected", [])
+                res = requests.post(f"{base_url}/api/sync_cameras", json={"cameras": cam_payload}, timeout=60)
+                if res.status_code == 200:
+                    data = res.json()
+                    accepted = data.get("accepted", [])
+                    rejected = data.get("rejected", [])
 
-                            print(f"✅ Server {sv['id']} báo cáo: Chạy được {len(accepted)} cam, Trả lại {len(rejected)} cam.")
+                    print(f"✅ Server {sv['id']} báo cáo: Nhận {len(accepted)} cam, Trả {len(rejected)} cam.")
+                    
+                    if accepted:
+                        CamRepository.set_cam_online(accepted)
+                        # Đã bọc mảng [] để chống vụ bị xé string
+                        servers_to_online.append(sv["id"])
+                    
+                    if rejected:
+                        CamRepository.set_cam_fail(rejected)
+            if servers_to_online:
+                ServerAIRepository.set_servers_online(servers_to_online)
 
-                            # CHỐT SỔ: Chuyển sang RUNNING cho cam thành công
-                            if accepted:
-                                placeholders = ",".join(["?"] * len(accepted))
-                                cursor.execute(f"UPDATE cameras SET status = 'running' WHERE cam_id IN ({placeholders})", accepted)
-
-                            # CHỐT SỔ: Đá về PENDING cho cam thất bại để lát tuần tra chia lại
-                            if rejected:
-                                placeholders = ",".join(["?"] * len(rejected))
-                                cursor.execute(f"UPDATE cameras SET server_id = NULL, status = 'pending' WHERE cam_id IN ({placeholders})", rejected)
-
-                            cursor.execute("UPDATE ai_servers SET active_cam = ? WHERE server_id = ?", (len(accepted), sv["id"]))
-                        else:
-                            print(f"❌ Server {sv['id']} từ chối lệnh. Đẩy toàn bộ về Pending.")
-                            cursor.execute("UPDATE cameras SET server_id = NULL, status = 'pending' WHERE server_id = ?", (sv["id"],))
-
-                    except Exception as e:
-                        print(f"❌ [CRASH] Mất kết nối tới {sv['id']}: {e}")
-                        cursor.execute("UPDATE ai_servers SET status = 'offline', active_cam = 0 WHERE server_id = ?", (sv["id"],))
-                        cursor.execute("UPDATE cameras SET server_id = NULL, status = 'pending' WHERE server_id = ?", (sv["id"],))
-
-            conn.commit()
+        except Exception as e:
+            # 💡 Bắt tận tay loại Lỗi: e.__class__.__name__ (Sẽ hiện KeyError/ConnectionError thay vì số 0 vô tri)
+            logger.error(f"[⚠️] Lỗi mạng khi bắn API tới Worker: {e.__class__.__name__} - {e}. Tiến hành Rollback!")
+            for sv in server_ready:
+                CamRepository.set_cam_pending(sv["newly_assigned"], sv["id"])
+            if camera_rollback_fail:
+                CamRepository.set_cam_fail(camera_rollback_fail)
+                
+        if camera_rollback_fail:
+            CamRepository.set_cam_fail(camera_rollback_fail)
 
     except Exception as e:
-        print(f"❌ Lỗi luồng tuần tra chia bài: {e}")
+        logger.error(f"❌ Lỗi ở bộ điều phối trung tâm: {e}")
+
 # HÀM KHỞI ĐỘNG VÒNG LẶP CHẠY NGẦM VĨNH VIỄN
 def start_watchdog():
     def loop():
@@ -211,7 +291,6 @@ def add_single_camera(cam_id, rtsp_url):
     except Exception as e:
         return {"success": False, "message": str(e)}
 
-
 def update_single_camera(cam_id, new_rtsp_url):
     """(SỬA IP CAMERA): Tìm xem nó đang ở Server nào, update DB, rồi ép Server đó Sync lại"""
     try:
@@ -238,7 +317,6 @@ def update_single_camera(cam_id, new_rtsp_url):
             return {"success": True, "message": "Đã đổi IP và khởi động lại luồng AI!"}
     except Exception as e:
         return {"success": False, "message": str(e)}
-
 
 def delete_single_camera(cam_id):
     """(XÓA CAMERA): Gạch tên khỏi DB, rồi ép con Server đang gánh nó Sync lại (Đá cam ra khỏi lô)"""
@@ -322,7 +400,7 @@ def add_new_server(ip_address):
         # 4. Insert thẳng vào DB
         cursor.execute("""
             INSERT INTO ai_servers (server_id, ip_address, status)
-            VALUES (?, ?, 'offline')
+            VALUES (?, ?, 'pending')
         """, (new_server_id, ip_address))
         
         conn.commit()

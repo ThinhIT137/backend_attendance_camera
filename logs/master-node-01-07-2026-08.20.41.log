@@ -1,0 +1,6 @@
+2026-07-01 08:20:41 | INFO     | app:3 | 🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 08:20:42 | CRITICAL | logger_utils:63 | 🚨 [HỆ THỐNG SẬP NGUỒN ĐỘT NGỘT] Lỗi chưa được xử lý:
+Traceback (most recent call last):
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\app.py", line 14, in <module>
+    from config.settings import BASE_DIR, ATTENDANCE_DB, FACES_DB, GATEWAY_URL
+ImportError: cannot import name 'GATEWAY_URL' from 'config.settings' (E:\FullStack_developer\projects\camera\Backend\master-node\config\settings.py)

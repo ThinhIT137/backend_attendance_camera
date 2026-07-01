@@ -46,6 +46,7 @@ def setup_databases():
                 has_gpu        BOOLEAN DEFAULT 0,      -- 0: Không, 1: Có
                 vram_free_gb   REAL DEFAULT 0.0,       -- GB VRAM còn trống
                 active_cam     INTEGER DEFAULT 0,      -- Đang gánh bao nhiêu cam
+                max_cam        INTEGER DEFAULT 0,      -- Số camera cho phép thêm
                 status         TEXT DEFAULT 'offline', -- 'online' hoặc 'offline'
                 last_heartbeat TEXT                    -- Thời gian ping cuối cùng
             )

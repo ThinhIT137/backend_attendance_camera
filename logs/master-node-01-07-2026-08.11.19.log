@@ -1,0 +1,270 @@
+2026-07-01 08:11:19 | INFO     | app:3 | 🎬 [MASTER] Hệ thống Logger toàn cục theo phiên đã kích hoạt!
+2026-07-01 08:11:21 | INFO     | app:78 | ==================================================
+2026-07-01 08:11:21 | INFO     | app:79 |  🌟 Face Recognition Attendance System (Flask + FastAPI)
+2026-07-01 08:11:21 | INFO     | app:80 | ==================================================
+2026-07-01 08:11:21 | INFO     | app:70 | 🚀 Đang khởi động hệ thống...
+2026-07-01 08:11:21 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:11:21 | INFO     | camRepository:178 | Đã lấy được 49 camera đang pending.
+2026-07-01 08:11:21 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 49 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:11:21 | WARNING  | server_yolo_service:188 | [⚠️] Hết chỗ! Dư 47 camera không có ai nhận.
+2026-07-01 08:11:21 | INFO     | camRepository:130 | Đã chuyển 2 camera sang busy (server_id=SV_003).
+2026-07-01 08:11:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:11:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.90.11:8000
+2026-07-01 08:11:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:11:23 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:26 | INFO     | app:101 |  🚀 Đang chạy Server tại: http://localhost:5000
+2026-07-01 08:11:26 | DEBUG    | proactor_events:634 | Using proactor: IocpProactor
+2026-07-01 08:11:27 | INFO     | websocket_service:48 | 🛸 [MASTER] Trạm thu thập AI đã mở tại cổng 5558, chờ Worker ném data tới...
+2026-07-01 08:11:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:11:33 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:40 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:42 | ERROR    | server_yolo_service:240 | [⚠️] Lỗi mạng khi bắn API tới Worker: ConnectTimeout - HTTPConnectionPool(host='192.168.1.11', port=8000): Max retries exceeded with url: /api/sync_cameras (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001D31D160620>, 'Connection to 192.168.1.11 timed out. (connect timeout=60)')). Tiến hành Rollback!
+2026-07-01 08:11:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:11:47 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:11:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:11:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:11:52 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:11:54 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:11:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:02 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:08 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:12 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:15 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:22 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:22 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:29 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:32 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:42 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:43 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:12:50 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:12:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:12:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:12:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:12:52 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:12:57 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:02 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:04 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:11 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:12 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:18 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:22 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:25 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:32 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:32 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:36 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:39 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:42 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:44 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}]
+2026-07-01 08:13:44 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}]
+2026-07-01 08:13:44 | ERROR    | app:875 | Exception on /api/attendance/dashboard-stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\api\router\attendance.py", line 124, in api_dashboard_stats
+    stats = Repository.get_dashboard_stats(today)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\db\repository.py", line 96, in get_dashboard_stats
+    active_cameras = conn.execute(
+                     ^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: device_id
+2026-07-01 08:13:44 | ERROR    | app:875 | Exception on /api/attendance/dashboard-stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\api\router\attendance.py", line 124, in api_dashboard_stats
+    stats = Repository.get_dashboard_stats(today)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\db\repository.py", line 96, in get_dashboard_stats
+    active_cameras = conn.execute(
+                     ^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: device_id
+2026-07-01 08:13:46 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:13:47 | ERROR    | app:875 | Exception on /api/attendance/dashboard-stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\api\router\attendance.py", line 124, in api_dashboard_stats
+    stats = Repository.get_dashboard_stats(today)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\db\repository.py", line 96, in get_dashboard_stats
+    active_cameras = conn.execute(
+                     ^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: device_id
+2026-07-01 08:13:47 | ERROR    | app:875 | Exception on /api/attendance/dashboard-stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\api\router\attendance.py", line 124, in api_dashboard_stats
+    stats = Repository.get_dashboard_stats(today)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\FullStack_developer\projects\camera\Backend\master-node\db\repository.py", line 96, in get_dashboard_stats
+    active_cameras = conn.execute(
+                     ^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: device_id
+2026-07-01 08:13:47 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}]
+2026-07-01 08:13:47 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}]
+2026-07-01 08:13:50 | DEBUG    | server_yolo:70 | [{'id': 'SV_002', 'ip': '10.40.90.11:8000', 'status': 'offline', 'activeCam': 0}, {'id': 'SV_003', 'ip': '192.168.1.11:8000', 'status': 'offline', 'activeCam': 0}]
+2026-07-01 08:13:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:13:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:13:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:13:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:13:52 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:13:53 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:00 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:01 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:02 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:07 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:12 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:14 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:21 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:22 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:26 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:28 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:32 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:35 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:41 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:42 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:42 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:42 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:42 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:42 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:49 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:14:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:51 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:14:52 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:14:52 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:14:52 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:14:52 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:14:56 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:02 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:15:02 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:15:02 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:15:02 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:15:03 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:06 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:15:10 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:12 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:15:12 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:15:12 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:15:12 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:15:16 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 10.40.91.141:5100
+2026-07-01 08:15:17 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:22 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:15:22 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:15:22 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:15:22 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...
+2026-07-01 08:15:24 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:31 | DEBUG    | connectionpool:241 | Starting new HTTP connection (1): 192.168.1.11:8000
+2026-07-01 08:15:32 | DEBUG    | camRepository:170 | file E:\FullStack_developer\projects\camera\Backend\master-node\state.json
+2026-07-01 08:15:32 | INFO     | camRepository:178 | Đã lấy được 51 camera đang pending.
+2026-07-01 08:15:32 | DEBUG    | server_yolo_service:149 | [🔄] Phát hiện 51 Camera bơ vơ. Bắt đầu chia lại bài...
+2026-07-01 08:15:32 | INFO     | server_yolo_service:154 | [❌] Không có server nào đang rảnh để chia...

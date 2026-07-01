@@ -20,3 +20,6 @@ MobileFaceNet.onnx
 *.jpeg
 *.png
 getip.py
+
+MediaMTX/*
+!MediaMTX/mediamtx.yml
